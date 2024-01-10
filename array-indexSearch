@@ -1,0 +1,17 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int[] manas={2,3,4,5,3,4,3,4,7};
+		int item=4;
+		System.out.println(Index(manas,item,0));
+	}
+	public static int  Index(int[] manas,int item,int idx){
+	    if(idx==manas.length){
+	        return -1;
+	    }
+	    if(manas[idx]==item){
+	        return idx;
+	    }
+	    return Index(manas,item,idx+1);
+	}
+}
