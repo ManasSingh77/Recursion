@@ -1,0 +1,15 @@
+public class Main
+{
+	public static void main(String[] args) {
+		int n=5;
+		int p=n-1;
+		PD(n,p);
+	}
+	public static void PD(int n,int p){
+	   if(p==-1){
+	       return ;
+	   }
+	    System.out.print(n-p);
+	    PD(n,p-1);
+	}
+}
